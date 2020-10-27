@@ -4,7 +4,7 @@ import { SafeAreaView, View, Text, FlatList } from 'react-native';
 
 import { CityItem, SearchBar } from '../components'
 
-let originalList = []
+let originalList = [];
 
 const CityList = (props) => {
     const [cityList, setCityList] = useState([]);
