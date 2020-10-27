@@ -16,10 +16,12 @@ const Router = () =>{
                      options={{headerShown: false}}/>
                 <Stack.Screen 
                     name="Restaurants" 
-                    component={RestaurantList} />
+                    component={RestaurantList} 
+                    options={{headerShown: false}}/>
                 <Stack.Screen 
                     name="Details" 
-                    component={RestaurantDetail} />
+                    component={RestaurantDetail} 
+                    options={{headerShown: false}}/>
             </Stack.Navigator>
         </NavigationContainer>
     );
