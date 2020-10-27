@@ -23,7 +23,7 @@ const RestaurantDetail = (props) => {
                 </View>
 
                 <View> style={styles.infoContainer}
-                     <Text style={styles.infoText}>{selectedRestaurant.postal_code}</Text>
+                     <Text style={styles.infoText}>{selectedRestaurant.phone}</Text>
                 </View>
             </View>
         </SafeAreaView>
