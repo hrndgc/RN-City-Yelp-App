@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView, View, Text, StyleSheet, Dimensions, Image} from 'react-native';
+import {SafeAreaView, View, Text, StyleSheet, Dimensions, Image, Button, Linking} from 'react-native';
 
 const RestaurantDetail = (props) => {
     const {selectedRestaurant} = props.route.params;
@@ -25,6 +25,8 @@ const RestaurantDetail = (props) => {
                 <View> style={styles.infoContainer}
                      <Text style={styles.infoText}>{selectedRestaurant.phone}</Text>
                 </View>
+
+                <Button title="Go for reserve" onPress={() => Linking(selectedRestaurant.mobile_reserve_url)} />
             </View>
         </SafeAreaView>
     );
